@@ -1,0 +1,73 @@
+Status: PASS
+Time Taken: 1453
+Size: 457
+Timestamp: Mon Sep 14 11:01:54 IST 2020
+TestStep: SoapBinding create-create Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: https://ap16.salesforce.com/services/Soap/c/49.0
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.2 (Java/12.0.1)
+Host : ap16.salesforce.com
+Accept-Encoding : gzip,deflate
+Content-Length : 867
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>00D2w00000Cc6Ru!AQ4AQFY9uJBvXZ8tT0H_H_MMlhMnQHUMHOKIe2Lte6a7vqGSj_u08yb_BRDyXQHoRTQYpKkvKqLDQ2Al1LoKpgSginJAX9rY</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:create>
+         <!--Zero or more repetitions:-->
+         <urn:sObjects xsi:type="urn1:Account" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--Zero or more repetitions:-->
+            <Name>Sample Soap Account</Name>
+            <Industry>Agriculture</Industry>
+            <Type>Prospect</Type>
+         </urn:sObjects>
+      </urn:create>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Transfer-Encoding : chunked
+Cache-Control : no-cache,must-revalidate,max-age=0,no-store,private
+X-B3-SpanId : 5764c4abc70be8b5
+X-B3-Sampled : 0
+X-B3-TraceId : 5764c4abc70be8b5
+Set-Cookie : BrowserId=ntWZrvZLEeqbPZ2T9G4iRw; domain=.salesforce.com; path=/; expires=Tue, 14-Sep-2021 05:32:03 GMT; Max-Age=31536000
+Vary : Accept-Encoding
+#status# : HTTP/1.1 200 OK
+Date : Mon, 14 Sep 2020 05:32:03 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <LimitInfoHeader>
+         <limitInfo>
+            <current>4</current>
+            <limit>15000</limit>
+            <type>API REQUESTS</type>
+         </limitInfo>
+      </LimitInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <createResponse>
+         <result>
+            <id>0012w00000Lz4GwAAJ</id>
+            <success>true</success>
+         </result>
+      </createResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

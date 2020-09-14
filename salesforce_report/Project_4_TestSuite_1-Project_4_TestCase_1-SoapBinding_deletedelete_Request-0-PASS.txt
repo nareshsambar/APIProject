@@ -1,0 +1,68 @@
+Status: PASS
+Time Taken: 405
+Size: 457
+Timestamp: Mon Sep 14 11:01:56 IST 2020
+TestStep: SoapBinding delete-delete Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: https://ap16.salesforce.com/services/Soap/c/49.0
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.2 (Java/12.0.1)
+Host : ap16.salesforce.com
+Accept-Encoding : gzip,deflate
+Content-Length : 551
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>00D2w00000Cc6Ru!AQ4AQFY9uJBvXZ8tT0H_H_MMlhMnQHUMHOKIe2Lte6a7vqGSj_u08yb_BRDyXQHoRTQYpKkvKqLDQ2Al1LoKpgSginJAX9rY</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:delete>
+         <!--Zero or more repetitions:-->
+         <urn:ids>0012w00000Lz4GwAAJ</urn:ids>
+      </urn:delete>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Transfer-Encoding : chunked
+Cache-Control : no-cache,must-revalidate,max-age=0,no-store,private
+X-B3-SpanId : 3c1c94a5280aacd2
+X-B3-Sampled : 0
+X-B3-TraceId : 3c1c94a5280aacd2
+Set-Cookie : BrowserId=n29oNfZLEeqUldvLNREXFQ; domain=.salesforce.com; path=/; expires=Tue, 14-Sep-2021 05:32:04 GMT; Max-Age=31536000
+Vary : Accept-Encoding
+#status# : HTTP/1.1 200 OK
+Date : Mon, 14 Sep 2020 05:32:04 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <LimitInfoHeader>
+         <limitInfo>
+            <current>4</current>
+            <limit>15000</limit>
+            <type>API REQUESTS</type>
+         </limitInfo>
+      </LimitInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <deleteResponse>
+         <result>
+            <id>0012w00000Lz4GwAAJ</id>
+            <success>true</success>
+         </result>
+      </deleteResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

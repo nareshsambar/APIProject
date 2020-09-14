@@ -1,0 +1,84 @@
+Status: PASS
+Time Taken: 6846
+Size: 1803
+Timestamp: Mon Sep 14 11:01:47 IST 2020
+TestStep: SoapBinding login-login Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: https://login.salesforce.com/services/Soap/c/49.0
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.2 (Java/12.0.1)
+Host : login.salesforce.com
+Accept-Encoding : gzip,deflate
+Content-Length : 406
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header></soapenv:Header>
+   <soapenv:Body>
+      <urn:login>
+         <urn:username>nareshsambar@ibm.com</urn:username>
+         <urn:password>N@resh.sambar1MBGsa1FY2WDOe2CSu3wOyMej</urn:password>
+      </urn:login>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : no-cache,must-revalidate,max-age=0,no-store,private
+X-B3-SpanId : 626a7263b8033761
+X-B3-Sampled : 0
+X-B3-TraceId : 626a7263b8033761
+Set-Cookie : BrowserId=m1j1dPZLEeq8bTF2ZfNDtw; domain=.salesforce.com; path=/; expires=Tue, 14-Sep-2021 05:31:57 GMT; Max-Age=31536000
+Vary : Accept-Encoding
+#status# : HTTP/1.1 200 OK
+Date : Mon, 14 Sep 2020 05:31:57 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <loginResponse>
+         <result>
+            <metadataServerUrl>https://ap16.salesforce.com/services/Soap/m/49.0/00D2w00000Cc6Ru</metadataServerUrl>
+            <passwordExpired>false</passwordExpired>
+            <sandbox>false</sandbox>
+            <serverUrl>https://ap16.salesforce.com/services/Soap/c/49.0/00D2w00000Cc6Ru</serverUrl>
+            <sessionId>00D2w00000Cc6Ru!AQ4AQFY9uJBvXZ8tT0H_H_MMlhMnQHUMHOKIe2Lte6a7vqGSj_u08yb_BRDyXQHoRTQYpKkvKqLDQ2Al1LoKpgSginJAX9rY</sessionId>
+            <userId>0052w000006p2rtAAA</userId>
+            <userInfo>
+               <accessibilityMode>false</accessibilityMode>
+               <chatterExternal>false</chatterExternal>
+               <currencySymbol>$</currencySymbol>
+               <orgAttachmentFileSizeLimit>26214400</orgAttachmentFileSizeLimit>
+               <orgDefaultCurrencyIsoCode>USD</orgDefaultCurrencyIsoCode>
+               <orgDefaultCurrencyLocale>en_US</orgDefaultCurrencyLocale>
+               <orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments>
+               <orgHasPersonAccounts>false</orgHasPersonAccounts>
+               <organizationId>00D2w00000Cc6RuEAJ</organizationId>
+               <organizationMultiCurrency>false</organizationMultiCurrency>
+               <organizationName>IBM</organizationName>
+               <profileId>00e2w000002mhG9AAI</profileId>
+               <roleId xsi:nil="true"/>
+               <sessionSecondsValid>7200</sessionSecondsValid>
+               <userDefaultCurrencyIsoCode xsi:nil="true"/>
+               <userEmail>sambaru.naresh@gmail.com</userEmail>
+               <userFullName>Naresh Sambar</userFullName>
+               <userId>0052w000006p2rtAAA</userId>
+               <userLanguage>en_US</userLanguage>
+               <userLocale>en_US</userLocale>
+               <userName>nareshsambar@ibm.com</userName>
+               <userTimeZone>America/Los_Angeles</userTimeZone>
+               <userType>Standard</userType>
+               <userUiSkin>Theme3</userUiSkin>
+            </userInfo>
+         </result>
+      </loginResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
